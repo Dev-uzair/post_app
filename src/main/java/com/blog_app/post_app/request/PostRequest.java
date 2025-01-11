@@ -8,5 +8,4 @@ import lombok.Setter;
 public class PostRequest {
     private String getContent;
     private Long userId;
-
 }
