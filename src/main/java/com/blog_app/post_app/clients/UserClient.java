@@ -10,7 +10,7 @@ import java.util.List;
 @FeignClient(name = "USER-APP")
 public interface UserClient {
     @GetMapping("/user/findById/{userId}")
-    public UserResponse findById(@PathVariable Long userId);
+    public UserResponse findIsUserExisted(@PathVariable Long userId);
 
     @GetMapping("user/")
     public List<UserResponse> findAll();
